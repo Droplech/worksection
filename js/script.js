@@ -122,7 +122,8 @@ $(document).ready(function(){
  
    
 
-    $('.tryFreeBtn').click(function(){
+    $('.tryFreeBtn').click(function(e){
+        e.preventDefault()
         $('.popUp_bg').fadeIn()
         $('.create_from_mail').fadeIn()
         $('.burger_menu').fadeOut()
