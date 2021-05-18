@@ -1667,6 +1667,9 @@ ul{
     .worksection_pc .img img{
         width: 100%;
     }
+    .infitity_lier div{
+        width: 400%;
+    }
    
 }
 
@@ -1686,6 +1689,9 @@ ul{
     }
     .nav_link_list > li + li{
         margin-left: 0;
+    }
+    .infitity_lier div {
+        width: 500%;
     }
 }
 
