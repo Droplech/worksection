@@ -477,6 +477,14 @@ ul{
 }
 .navigation_wrapper .logo{
     z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.navigation_wrapper .logo .txt span{
+    font-weight: 800;
+    font-size: 30px;
+    color: #2C2C2C;
+    padding-left: 13px;
 }
 .nav_link_list{
     display: flex;
@@ -507,9 +515,12 @@ ul{
     color: #fff;
     background-color: #77BB00;
     border-radius: 7px;
+    transition: .3s;
 }
 
-
+.btn_try_free:hover{
+    background-color: #76bb00c5;
+}
 
 .head_banner{
     background-color: #F6FFF4;
@@ -544,6 +555,14 @@ ul{
     width: 90%;
 }
 
+
+.head_banner_wrapper .task_spending .spending img{
+    width: 543px;
+}
+
+.head_banner_wrapper .task_spending .task img{
+    width: 530px;
+}
 
 .head_banner_wrapper .task_spending .task{
     margin: -150px 0 0 -329px;
@@ -853,6 +872,7 @@ ul{
     justify-content: space-between;
     display: none;
     margin-top: 30px;
+    overflow: hidden;
 }
 
 .tabs_content.tabs_content-active{
@@ -861,10 +881,38 @@ ul{
 }
 
 
+
+
+
+
+
 .tabs_content .txt{
     max-width: 622px;
     padding-top: 20px;
+    
+    
 }
+.tabs_content.tabs_content-active .txt{
+    
+    opacity: 1;
+    animation: txt 1s ease;
+    
+    
+}
+
+
+@keyframes txt {
+    0%{
+        transform: translateX(-150%);
+    }
+    50%,100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+
 
 .tabs_content .txt p{
     font-weight: 500;
@@ -885,6 +933,26 @@ ul{
 .tabs_content .img{
     margin-right: -65px;
 }
+
+.tabs_content.tabs_content-active .img{
+    
+    opacity: 1;
+    animation: img 1s ease;
+    
+    
+}
+
+
+@keyframes img {
+    0%{
+        transform: translateX(150%);
+    }
+    50%,100%{
+        transform: translateX(0%);
+    }
+}
+
+
 
 
 #ticker-1 li span{
@@ -1275,8 +1343,11 @@ ul{
 }
 .tariffs_item.bg_blue .try_free{
     background-color: #4E89CE;
+    transition: .3s;
 }
-
+.tariffs_item.bg_blue .try_free:hover{
+    background-color: #4e8aced0;
+}
 
 
 
@@ -1327,8 +1398,11 @@ ul{
 
 .tariffs_item.bg_pink .try_free{
     background-color: #FD0183;
+    transition: .3s;
 }
-
+.tariffs_item.bg_pink .try_free:hover{
+    background-color: #fd0183b6;
+}
 
 
 
@@ -1344,9 +1418,12 @@ ul{
 
 .tariffs_item.bg_orange .try_free{
     background-color: #FF7919;
+    transition: .3s;
 }
 
-
+.tariffs_item.bg_orange .try_free:hover{
+    background-color: #ff7919a9;
+}
 
 .tariffs_item.bg_creame .tariffs_item_content{
     background-color: #FFEDE7;
@@ -1360,8 +1437,12 @@ ul{
 
 .tariffs_item.bg_creame .try_free{
     background-color: #3E3E3E;
+    transition: .3s;
 }
 
+.tariffs_item.bg_creame .try_free:hover{
+    background-color: #3e3e3eb4;
+}
 
 
 
@@ -1463,6 +1544,15 @@ ul{
 
 
 
+/* .footer_inp._error{
+    border-color: red;
+} */
+
+
+.error{
+    border-color: red !important;
+}
+
 .footer_wrapper form button{
     width: 100%;
     outline: none;
@@ -1476,9 +1566,12 @@ ul{
     cursor: pointer;
     padding: 18px 0;
     margin-top: 30px;
+    transition: .3s;
 }
 
-
+.footer_wrapper form button:hover{
+    background-color: #76bb00c5;
+}
 
 
 
@@ -1617,6 +1710,14 @@ ul{
 
 
 @media screen and (max-width: 1440px) {
+    .head_banner_wrapper .task_spending .spending img{
+        width: 400px;
+    }
+    
+    .head_banner_wrapper .task_spending .task img{
+        width: 423px;
+    }
+
     .solutions_tabs ul{
         margin: 0 auto;
     }
@@ -1696,10 +1797,10 @@ ul{
 }
 
 @media screen and (max-width: 1280px){
-    .task_spending .spending img {
+    .head_banner_wrapper .task_spending .spending img {
         width: 320px;
     }
-    .task_spending .task img {
+    .head_banner_wrapper .task_spending .task img {
         width: 370px;
     }
     .head_banner_wrapper .task_spending .task {
@@ -1755,6 +1856,9 @@ ul{
 }
 
 @media screen and (max-width: 1024px){
+    .navigation_wrapper .logo .txt span{
+        font-size: 22px;
+    }
     .container{
         padding: 0 30px;
     }
@@ -1845,6 +1949,7 @@ ul{
     .tabs_content{
         flex-wrap: wrap;
         justify-content: center;
+        
     }
     .reviews_wrapper::before{
         width: 150px;
@@ -1989,8 +2094,8 @@ ul{
     .worksection_pc .img{
         text-align: center;
     }
-    .task_spending .spending img,
-    .task_spending .task img{
+    .head_banner_wrapper .task_spending .spending img,
+    .head_banner_wrapper .task_spending .task img{
         width: 90%;
         
     }
