@@ -1045,7 +1045,7 @@ ul{
 }
 .reviews_item{
     width: 750px ;
-    height: 420px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.08);
     padding-top: 30px;
@@ -2017,6 +2017,16 @@ ul{
     .infitity_lier div span{
         font-size: 86px;
     }
+    .reviews_wrapper::before,
+    .reviews_wrapper::after,
+    .tariffs_wrapper::before,
+    .tariffs_wrapper::after{
+        display: none;
+    }
+    .tariffs_item .tariffs_item_content{
+        top: 0;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -2036,22 +2046,14 @@ ul{
     .integration_item {
         flex-basis: 100%;
     }
-    .reviews_wrapper::before,
-    .reviews_wrapper::after,
-    .tariffs_wrapper::before,
-    .tariffs_wrapper::after{
-        display: none;
-    }
+  
     #reviews-next{
         right: 10%;
     }
     #reviews-prev{
         left: 10%;
     }
-    .tariffs_item .tariffs_item_content{
-        top: 0;
-        left: 0;
-    }
+  
     #tariffs-next{
         right: 10%;
     }

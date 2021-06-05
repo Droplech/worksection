@@ -50,22 +50,17 @@ $(document).ready(function(){
             prevEl: "#reviews-prev",
         },
         slidesPerView: 1,
-        centeredSlides: true,
+        centeredSlides: false,
         spaceBetween: 30,
         pagination: {
             el: '#reviews-pagination',
         },
         breakpoints:{
-           600:{
-            slidesPerView: 2
+           
+           1024:{
+            slidesPerView: 3
            }
-            // 1024:{
-            //     slidesPerView: 2,
-            //     spaceBetween: 20
-            // },
-            // 1680:{
-            //     slidesPerView: 2
-            // }
+            
         }
 
     })
@@ -95,14 +90,14 @@ $(document).ready(function(){
             prevEl: "#tariffs-prev",
         },
         slidesPerView: 1,
-        centeredSlides: true,
+        centeredSlides: false,
         spaceBetween: 40,
         pagination: {
             el: '#tariffs-pagination',
         },
         breakpoints: {
             600:{
-                slidesPerView: 2
+                slidesPerView: 1
             },
             1024:{
                 slidesPerView: 3
