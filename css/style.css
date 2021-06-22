@@ -1520,7 +1520,7 @@ ul{
 .footer_wrapper form input{
     width: 100%;
     outline: none;
-    background: none;
+    background-color: transparent !important;
     border: none;
     border-bottom: 1px solid #515151;
     color: #fff;
@@ -1537,21 +1537,23 @@ ul{
 
 
 
-.footer_wrapper form > input + input{
+.footer_wrapper form  input{
     margin-top: 30px;
 }
 
 
-
-
-/* .footer_inp._error{
-    border-color: red;
-} */
-
-
-.error{
-    border-color: red !important;
+.footer_wrapper form span{
+    margin: 0;
+    display: inline-block;
+    font-size: 13px;
 }
+
+
+
+
+
+
+
 
 .footer_wrapper form button{
     width: 100%;
@@ -1584,6 +1586,23 @@ ul{
     text-align: center;
     margin-top: 150px;
 }
+
+
+#error,
+#error_two,
+#error_three,
+#error_four{
+    color: red;
+    margin-top: 20px;
+}
+
+#acept,
+#acept_two,
+#acept_four{
+    color: green;
+    margin-top: 20px
+}
+
 
 
 
@@ -1680,7 +1699,6 @@ ul{
     justify-content: center;
     
 }
-
 
 
 
@@ -2029,7 +2047,7 @@ ul{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .solutions_tabs ul{
         flex-direction: column;
         width: 100%;
@@ -2178,6 +2196,18 @@ ul{
     }
     .create_from_mail_step2 .signin-sms__wrap input{
         width: 60px;
+    }
+    .create_from_mail,
+    .create_from_mail_step2{
+        height: auto;
+    }
+    .create_from_mail h3,
+    .create_from_mail_step2 h3{
+        font-size: 20px;
+    }
+    .create_from_mail form,
+    .create_from_mail_step2 form {
+        margin-top: 50px;
     }
 }
 

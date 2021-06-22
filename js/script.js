@@ -129,15 +129,6 @@ $(document).ready(function(){
     })
 
 
-    $('.open_step2').click(function(){
-        $('.create_from_mail').fadeOut()
-        $('.create_from_mail_step2').fadeIn()
-    })
-
-    $('.open_steps3').click(function(){
-        $('.create_from_mail_step2').fadeOut()
-        $('.create_from_mail_step3').fadeIn()
-    })
 
 
 
@@ -233,122 +224,16 @@ $(document).ready(function(){
     
 
 
-    // $('.footer_form_btn').click(function(){
-    //     if( $('.footer_inp').value == null || $('.footer_inp').value === '' ){
-    //         $('.footer_inp').addClass('error')
-    //         console.log("If")
-    //     }else{
-    //         if( $('.footer_inp').value ==! null || $('.footer_inp').value ==! '' ){
-    //             $('.footer_inp').removeClass('error')
-    //             console.log("elseIf")
-    //         }
-    //     }
-       
+    // $('.open_step2').click(function(){
+    //     $('.create_from_mail').fadeOut()
+    //     $('.create_from_mail_step2').fadeIn()
     // })
-    // let input = 
 
-    // $('.footer_form_btn').click(function(){
-    //     if( $('.footer_inp').val() !== '' ){
-    //         $(this).removeClass('error')
-    //     }else{
-    //         $('.footer_inp').addClass('error')
-    //     }
+    // $('.open_steps3').click(function(){
+    //     $('.create_from_mail_step2').fadeOut()
+    //     $('.create_from_mail_step3').fadeIn()
     // })
-    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    $('.footer_form_btn').click(function(){
-        if( $('.inp_name').val() !== '' ){
-            $('.inp_name').removeClass('error')
-        }else{
-            $('.inp_name').addClass('error')
-        }
-    })
-
-    $('.footer_form_btn').click(function(){
-        if( $('.inp_phone').val() !== '' ){
-            $('.inp_phone').removeClass('error')
-        }else{
-            $('.inp_phone').addClass('error')
-        }
-    })
-
-    $('.footer_form_btn').click(function(){
-        if( $('.inp_mail').val() !== '' ){
-            $('.inp_mail').removeClass('error')
-            console.log('mail ok')
-        }else{
-            $('.inp_mail').addClass('error')
-        }
-    })
-
-    $('.footer_form_btn').click(function(){
-        if( $('.inp_txt').val() !== '' ){
-            $('.inp_txt').removeClass('error')
-        }else{
-            $('.inp_txt').addClass('error')
-        }
-    })
-
-
-   
-
-  
-
-    // const form = document.getElementById('form')
-    // form.addEventListener('submit', formSend);
-
-    // async function formSend(e){
-    //     e.preventDefault();
-
-    //     let error = formValidate(form);
-
-        
-    // }
-
-    // function formValidate(form){
-    //     let error = 0;
-
-    //     let formReq = document.querySelectorAll('._req');
-
-    //     for (let index = 0; index < formReq.length; index++) {
-    //         const input = formReq[index];
-
-    //         formRemoveError(input);
-
-    //         if(input.classList.contains('_email')){
-    //             if(emailTest(input)){
-    //                 formAddError(input)
-    //                 error++;
-    //             }else{
-    //                 if(input.value === ''){
-    //                     formAddError(input)
-    //                     error++;
-    //                 }
-    //             }
-    //         }
-            
-    //     }
-
-    // }
-
-
-
-
-
-
-    // function formAddError(input){
-    //     input.perentElement.classList.add('_error');
-    //     input.classList.add('_error')
-    // }
-
-    // function formRemoveError(input){
-    //     input.perentElement.classList.remove('_error');
-    //     input.classList.remove('_error')
-    // }
-
-    // function emailTest(input){
-    //     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+{2,8})+$/.test(input.value)
-    // }
+    
 
 
 
