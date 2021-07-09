@@ -1812,6 +1812,14 @@ ul{
     .infitity_lier div {
         width: 500%;
     }
+    .solutions_tabs ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .solutions_tabs ul li{
+        padding-right: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1280px){
@@ -1938,6 +1946,9 @@ ul{
     .tabs_content .txt{
         max-width: 500px;
     }
+    .solutions_tabs ul li span{
+        font-size: 12px;
+    }
 }
 
 
@@ -2052,6 +2063,9 @@ ul{
     .tariffs_item .tariffs_item_content{
         top: 0;
         left: 0;
+    }
+    .solutions_tabs ul li span {
+        font-size: 9px;
     }
 }
 
@@ -2225,6 +2239,9 @@ ul{
     }
     .tariffs .bgi{
         display: none;
+    }
+    .solutions_tabs ul li span {
+        font-size: 15px;
     }
 
 }
