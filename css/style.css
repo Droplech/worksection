@@ -1932,6 +1932,12 @@ ul{
     .create_from_mail_step3 form .your_akk{
         margin-top: 30px;
     }
+    .tabs_content .txt p{
+        margin-top: -50px;
+    }
+    .tabs_content .txt{
+        max-width: 500px;
+    }
 }
 
 
@@ -1965,7 +1971,6 @@ ul{
         justify-content: center;
     }
     .tabs_content{
-        flex-wrap: wrap;
         justify-content: center;
         
     }
@@ -2019,12 +2024,15 @@ ul{
     .instrument_work .img{
         margin-bottom: 30px;
     }
+    .tabs_content .txt p{
+        font-size: 15px;
+    }
     .tabs_content .txt{
-        text-align: center;
+        max-width: 350px;
     }
     .tabs_content .txt .circle{
         margin: 0;
-        text-align: center;
+        
     }
     .tabs_content .txt .btn_try_free{
         margin: 0 auto;
@@ -2209,6 +2217,16 @@ ul{
     .create_from_mail_step2 form {
         margin-top: 50px;
     }
+    .tabs_content{
+        flex-wrap: wrap-reverse;
+    }
+    .tabs_content .txt .circle{
+        display: none;
+    }
+    .tariffs .bgi{
+        display: none;
+    }
+
 }
 
 
