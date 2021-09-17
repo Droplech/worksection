@@ -1975,7 +1975,7 @@ ul{
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .burger{
         display: block;
     }
@@ -2087,7 +2087,7 @@ ul{
         left: 0;
     }
     .solutions_tabs ul li span {
-        font-size: 9px;
+        font-size: 13px;
     }
     .tabs_content .img .tochki {
         width: 140px;
@@ -2096,7 +2096,7 @@ ul{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
     .tabs_content .img .tochki{
         display: none;
     }

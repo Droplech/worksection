@@ -85,17 +85,17 @@ $(document).ready(function(){
         e.preventDefault()
 
         var el = document.getElementById('main_form_three');
-        var mail = el.mail.value;
+        // var mail = el.mail.value;
         var smsNum1 = el.smsNum1.value;
         var smsNum2 = el.smsNum2.value;
         var smsNum3 = el.smsNum3.value;
         var smsNum4 = el.smsNum4.value;
         var fail = "";
         
-        if(mail == "" )
-        fail = "Все поля должны быть заполнены корректно";
-        else if(mail.length <= 3)
-        fail = "Поле заполнено некорректно";
+        // if(mail == "" )
+        // fail = "Все поля должны быть заполнены корректно";
+        // else if(mail.length <= 3)
+        // fail = "Поле заполнено некорректно";
    
 
 
